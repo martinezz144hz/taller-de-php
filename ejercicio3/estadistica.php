@@ -21,7 +21,14 @@ class Estadistica {
  
     // Moda: el número o números que más se repiten
     public function moda(): array {
-        $frecuencias = array_count_values($this->numeros);
+        // Convertir a string para que array_count_values funcione con decimales
+        $numerosString = array_map('strval', $this->numeros);
+        $frecuencias = array_count_values($numerosString);
+ 
+        if (empty($frecuencias)) {
+            return [];
+        }
+ 
         $maxFrecuencia = max($frecuencias);
  
         $moda = [];
@@ -53,7 +60,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $input    = trim($_POST['numeros'] ?? '');
  
     // Separar los números ingresados
-    $partes = explode(',', $input);
+    $partes  = explode(',', $input);
     $numeros = [];
  
     foreach ($partes as $parte) {
