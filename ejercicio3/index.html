@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Promedio, Media y Moda</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      color: #000000;
+      padding: 40px;
+    }
+ 
+    h1 { margin-bottom: 10px; }
+ 
+    p { margin-bottom: 20px; color: #444; }
+ 
+    label { font-size: 15px; }
+ 
+    input[type="number"] {
+      width: 200px;
+      padding: 6px;
+      font-size: 15px;
+      margin-top: 6px;
+      display: block;
+    }
+ 
+    input[type="text"] {
+      width: 400px;
+      padding: 6px;
+      font-size: 15px;
+      margin-top: 6px;
+      display: block;
+    }
+ 
+    button {
+      margin-top: 14px;
+      padding: 8px 20px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+ 
+    a {
+      display: inline-block;
+      margin-top: 30px;
+      color: #0000EE;
+      text-decoration: underline;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+ 
+  <h1>Promedio, Media y Moda</h1>
+  <p>Ingresa la cantidad de números y luego escríbelos separados por comas.</p>
+  <p>Ejemplo: <strong>4, 7, 2, 7, 9, 4, 7</strong></p>
+ 
+  <form action="estadistica.php" method="POST">
+ 
+    <label for="cantidad">¿Cuántos números vas a ingresar?</label>
+    <input type="number" id="cantidad" name="cantidad" min="1" placeholder="Ej: 7" required />
+ 
+    <br/>
+ 
+    <label for="numeros">Ingresa los números separados por comas:</label>
+    <input type="text" id="numeros" name="numeros" placeholder="Ej: 4, 7, 2, 7, 9, 4, 7" required />
+ 
+    <button type="submit">Calcular</button>
+ 
+  </form>
+ 
+  <a href="../index.html">← Volver al menú</a>
+ 
+</body>
+</html>
+ 
