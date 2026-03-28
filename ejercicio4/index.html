@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Operaciones de Conjuntos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      color: #000000;
+      padding: 40px;
+    }
+ 
+    h1 { margin-bottom: 10px; }
+ 
+    p { margin-bottom: 20px; color: #444; }
+ 
+    label { font-size: 15px; }
+ 
+    input[type="text"] {
+      width: 400px;
+      padding: 6px;
+      font-size: 15px;
+      margin-top: 6px;
+      display: block;
+    }
+ 
+    button {
+      margin-top: 14px;
+      padding: 8px 20px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+ 
+    a {
+      display: inline-block;
+      margin-top: 30px;
+      color: #0000EE;
+      text-decoration: underline;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+ 
+  <h1>Operaciones de Conjuntos</h1>
+  <p>Ingresa dos conjuntos de números enteros separados por comas.</p>
+  <p>Ejemplo: <strong>A = 1, 2, 3, 4</strong> y <strong>B = 3, 4, 5, 6</strong></p>
+ 
+  <form action="conjuntos.php" method="POST">
+ 
+    <label for="conjuntoA">Conjunto A:</label>
+    <input type="text" id="conjuntoA" name="conjuntoA" placeholder="Ej: 1, 2, 3, 4" required />
+ 
+    <br/>
+ 
+    <label for="conjuntoB">Conjunto B:</label>
+    <input type="text" id="conjuntoB" name="conjuntoB" placeholder="Ej: 3, 4, 5, 6" required />
+ 
+    <button type="submit">Calcular</button>
+ 
+  </form>
+ 
+  <a href="../index.html">← Volver al menú</a>
+ 
+</body>
+</html>

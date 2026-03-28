@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Conversor a Binario</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      color: #000000;
+      padding: 40px;
+    }
+ 
+    h1 { margin-bottom: 10px; }
+ 
+    p { margin-bottom: 20px; color: #444; }
+ 
+    label { font-size: 15px; }
+ 
+    input[type="number"] {
+      width: 200px;
+      padding: 6px;
+      font-size: 15px;
+      margin-top: 6px;
+      display: block;
+    }
+ 
+    button {
+      margin-top: 14px;
+      padding: 8px 20px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+ 
+    a {
+      display: inline-block;
+      margin-top: 30px;
+      color: #0000EE;
+      text-decoration: underline;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+ 
+  <h1>Conversor a Binario</h1>
+  <p>Ingresa un número entero y obtén su representación en binario.</p>
+  <p>Ejemplo: <strong>10</strong> → <strong>1010</strong></p>
+ 
+  <form action="binario.php" method="POST">
+ 
+    <label for="numero">Ingresa un número entero:</label>
+    <input type="number" id="numero" name="numero" placeholder="Ej: 10" required />
+ 
+    <button type="submit">Convertir</button>
+ 
+  </form>
+ 
+  <a href="../index.html">← Volver al menú</a>
+ 
+</body>
+</html>
