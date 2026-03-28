@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Conversor de Acrónimos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      color: #000000;
+      padding: 40px;
+    }
+ 
+    h1 {
+      margin-bottom: 10px;
+    }
+ 
+    p {
+      margin-bottom: 20px;
+      color: #444;
+    }
+ 
+    label {
+      font-size: 15px;
+    }
+ 
+    input[type="text"] {
+      width: 350px;
+      padding: 6px;
+      font-size: 15px;
+      margin-top: 6px;
+      display: block;
+    }
+ 
+    button {
+      margin-top: 14px;
+      padding: 8px 20px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+ 
+    a {
+      display: inline-block;
+      margin-top: 30px;
+      color: #0000EE;
+      text-decoration: underline;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+ 
+  <h1>Conversor de Acrónimos</h1>
+  <p>Ingresa una frase y obtén su acrónimo. Ejemplos:</p>
+  <ul>
+    <li>As Soon As Possible → ASAP</li>
+    <li>Liquid-crystal display → LCD</li>
+    <li>Thank George It's Friday! → TGIF</li>
+  </ul>
+ 
+  <br/>
+ 
+  <form action="acronimo.php" method="POST">
+    <label for="frase">Ingresa la frase:</label>
+    <input type="text" id="frase" name="frase" placeholder="Ej: Portable Network Graphics" required />
+    <button type="submit">Convertir</button>
+  </form>
+ 
+  <a href="../index.html">← Volver al menú</a>
+ 
+</body>
+</html>
